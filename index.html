@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.E.F Data Interface | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <a href="index.html"><img src="logo.png" alt="Federation Logo" class="logo"></a>
+        <h1>S.E.F Data Interface</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="#">Operations</a>
+            <a href="#">Intel</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Map Section -->
+        <div class="map-container">
+            <div class="map" id="map-container">
+                <img id="map-image" src="map-large.png" alt="Federation Map">
+            </div>
+            <div class="controls">
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+            </div>
+        </div>
+
+        <!-- Map Key Section -->
+        <div class="key-container">
+            <h2>Map Key</h2>
+            <img src="map-key.png" alt="Map Key">
+            <div class="map-guide">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

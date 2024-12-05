@@ -1,0 +1,163 @@
+/* General Styling for Futuristic Interface */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #00ffcc;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Taskbar at the top */
+.taskbar {
+    background-color: #1a1a1a;
+    color: #00ffcc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00ffcc;
+}
+.taskbar h1 {
+    margin: 0;
+    font-size: 20px;
+    text-shadow: 0 0 5px #00ffcc;
+}
+.taskbar nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #00ffcc;
+}
+.taskbar nav a:hover {
+    text-decoration: underline;
+}
+.taskbar .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 60px);
+}
+
+/* Map container */
+.map-container {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #00ffcc;
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+}
+.map {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.map img {
+    max-width: none;
+    max-height: 100%;
+    transform-origin: center;
+    cursor: grab;
+    border: 1px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+    position: relative;
+}
+
+/* Zoom controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-top: 2px solid #00ffcc;
+}
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #00ffcc;
+    background-color: #121212;
+    color: #00ffcc;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #00ffcc;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.controls button:hover {
+    background-color: #00ffcc;
+    color: #121212;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Key container */
+.key-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-left: 2px solid #00ffcc;
+    overflow-y: auto;
+    color: #00ffcc;
+}
+.key-container h2 {
+    margin: 0 0 20px;
+    text-shadow: 0 0 5px #00ffcc;
+}
+.key-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 255, 204, 0.2);
+}
+
+/* Add glow to borders */
+.map-container, .key-container, .taskbar {
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Add styling for new Facilities section in the taskbar */
+.taskbar nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #00ffcc;
+}
+.taskbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the map guide */
+.map-guide {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.map-guide h3 {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.map-guide ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.map-guide li {
+    margin-bottom: 5px;
+}
+
+
+
