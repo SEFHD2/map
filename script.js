@@ -11,6 +11,7 @@ let panY = 0; // Vertical movement
 const movementSpeed = 20; // Speed for WASD movement
 let isDragging = false;
 let startX = 0;
+let startY = 0;
 
 // Set initial map display
 function initializeMap() {
@@ -41,16 +42,18 @@ mapContainer.addEventListener('wheel', (event) => {
     setZoomLevel(scale + delta);
 });
 
-// Horizontal drag functionality
+// Horizontal and vertical drag functionality
 mapImage.addEventListener('mousedown', (event) => {
     isDragging = true;
     startX = event.clientX - panX;
+    startY = event.clientY - panY;
     mapImage.style.cursor = 'grabbing';
 });
 
 window.addEventListener('mousemove', (event) => {
     if (!isDragging) return;
     panX = event.clientX - startX;
+    panY = event.clientY - startY;
     updateMapPosition();
 });
 
